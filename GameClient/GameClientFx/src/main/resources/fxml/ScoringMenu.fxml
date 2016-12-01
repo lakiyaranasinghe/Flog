@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="scorePane" prefHeight="500.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nsbm.controller.ScoringMenuController">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="105.0" prefHeight="61.0" prefWidth="538.0" styleClass="glassPane">
+         <children>
+            <!--<Label layoutX="57.0" layoutY="15.0" styleClass="miniheader" text="Name" textFill="WHITE" />-->
+            <Label fx:id="playerName" layoutX="146.0" layoutY="16.0" styleClass="miniheader" textFill="WHITE" />
+<!--            <Label layoutX="340.0" layoutY="16.0" styleClass="miniheader" text="Score" textFill="WHITE" />
+            <Label fx:id="playerScoreLabel" layoutX="436.0" layoutY="16.0" styleClass="miniheader" textFill="WHITE" />-->
+         </children></AnchorPane>
+      <AnchorPane layoutX="85.0" layoutY="184.0" prefHeight="231.0" prefWidth="431.0" styleClass="glassPane">
+         <children>
+             <ListView fx:id="scoreList" layoutX="16.0" layoutY="7.0" prefHeight="233.0" prefWidth="399.0">
+                 
+             </ListView>
+<!--            <TableView fx:id="scoreTable" layoutX="16.0" layoutY="7.0" prefHeight="233.0" prefWidth="399.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="scoreColumn" prefWidth="75.0" text="Score" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>-->
+         </children></AnchorPane>
+      <Label layoutX="208.0" layoutY="29.0" styleClass="subheader" text="Game Score" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="198.0" layoutY="437.0" mnemonicParsing="false" onAction="#backAction" prefHeight="40.0" prefWidth="181.0" styleClass="orangeButton" text="Back To Main Menu" />
+   </children>
+</AnchorPane>

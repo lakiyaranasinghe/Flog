@@ -1,0 +1,312 @@
+/*---------background css-----------------------*/
+.mainFxmlClass{
+    -fx-background-image: url('background.jpg');
+}
+.glassPane{
+    -fx-background-color: rgba(0, 100, 100, 0.5);
+    -fx-background-radius: 10;
+}
+/*-------------end of background css----------------*/
+
+/*---------------------button css----------------------*/
+.orangeButton{
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+.silvarButton{
+    -fx-background-color:#c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 50;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.blueButton{
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.greyButton {
+    -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.lionbutton{
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#9a9a9a, #909090),
+        linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+#terminatePerk{
+    -fx-background-image: url('solder.jpg');
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-text-alignment:justify;
+}
+#vowelPerk{
+    -fx-background-image: url('devil.png');
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-text-alignment:justify;
+}
+#scorePerk{
+    -fx-background-image: url('star.png');
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-text-alignment:justify;
+}
+#startButton:hover ,#notificationButton:hover ,#scoreboardButton:hover ,#instructionButton:hover ,
+#requestButton:hover,#letterChangeButton:hover,#submitButton:hover ,#signUpButton:hover,#backButton ,#exitButton{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+/*------------ end of button css-----------------------*/
+
+/*------------------ text box css-----------------------*/
+.text-input:disabled {
+    -fx-opacity: 1.0;
+    -fx-cursor:null;
+    -fx-background-image: url('woodenback.jpg');
+    -fx-background-image-radius: 14px;
+    -fx-background-radius: 13px;
+}
+.defaultText{
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.5) , 3, 0.0 , 1, 1 );
+    -fx-background-radius: 11px;
+    -fx-background-color: linear-gradient(to left, #83a4d4 , #b6fbff);
+    -fx-focus-traversable:false;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-font-size:30px;
+    -fx-font-family:Comic Sans MS;
+    -fx-font-style:bold;
+    -fx-text-fill:#000654;
+}
+
+#wordPane > #wordField{
+    -fx-background-radius: 11px;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-font-size:30px;
+    -fx-font-family:High Tower Text;
+    -fx-font-style:bold;
+    -fx-text-fill:#000654;
+}
+
+#letterPane > .text-input{
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.5) , 3, 0.0 , 1, 1 );
+    -fx-background-radius: 13px;
+    -fx-background-insets: 0 1 1 0, 1 0 0 1, 1;
+    -fx-background-color:linear-gradient(to left, #1D976C , #93F9B9);
+    -fx-display-caret: false;
+    -fx-cursor:hand;
+    -fx-focus-traversable:false;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-font-size:30px;
+    -fx-font-family:Gafata;
+    -fx-font-style:bold;
+    -fx-alignment:TOP_CENTER;
+}
+.defaultLetter{
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.5) , 3, 0.0 , 1, 1 );
+    -fx-background-radius: 13px;
+    -fx-background-insets: 0 1 1 0, 1 0 0 1, 1;
+    -fx-background-color:linear-gradient(to left, #1D976C , #93F9B9);
+    -fx-display-caret: false;
+    -fx-cursor:hand;
+    -fx-focus-traversable:false;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-font-size:30px;
+    -fx-font-family:Gafata;
+    -fx-font-style:bold;
+    -fx-alignment:TOP_CENTER;
+}
+
+.selectedLetter{
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.5) , 3, 0.0 , 1, 1 );
+    -fx-background-radius: 13px;
+    -fx-background-insets: 0 1 1 0, 1 0 0 1, 1;
+    -fx-background-color:linear-gradient(to left, #00C9FF , #92FE9D);
+    -fx-display-caret: false;
+    -fx-cursor:hand;
+    -fx-focus-traversable:false;
+    -fx-padding:0px;
+    -fx-spacing: 0px;
+    -fx-font-size:30px;
+    -fx-font-family:Gafata;
+    -fx-font-style:bold;
+    -fx-alignment:TOP_CENTER;
+}
+.text-input:text{
+    -fx-font-family: Gafata;
+    -fx-font-size: 40;
+    
+}
+#letterPane > .text-input:hover{
+        -fx-text-fill:white;
+        -fx-background-radius: 13px;
+        -fx-background-color:linear-gradient(to left, #00bf8f , #001510);
+}
+#timerLabel {
+    -fx-font-size: 50px;
+    -fx-font-weight:bold;
+    -fx-font-family:Stencil;
+    -fx-effect: dropshadow(three-pass-box , #ffffff , 4, 0.0 , 0 , 2 );
+    -fx-text-fill:  linear-gradient(#66ff66, #00cc00);
+}
+
+/*----------------end of text box css------------*/
+
+/*------------------- Label css------------------*/
+.mainheader{
+    -fx-font-family:Forte;
+    -fx-font-size:85px;
+    -fx-font-style:bold;
+    -fx-text-alignment:center;
+}
+.subheader{
+    -fx-font-family:DengXian;
+    -fx-font-size:30px;
+    -fx-font-style:bold;
+
+}
+.miniheader{
+    -fx-font-family:Andalus;
+    -fx-font-size:20px;
+    -fx-font-style:bold;
+}
+
+#username{
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.5) , 3, 0.0 , 1, 1 );
+    -fx-background-insets: 0 1 1 0, 1 0 0 1, 1;
+}
+
+/*---------------end of Label css----------*/
+/*---------------table----------*/
+.table-view {
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+.table-view .column-header{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 15px;
+}      
+.table-view .column-header .label{
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    -fx-text-fill:#000654;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-background-fills: white;
+    -fx-border-color: white;
+    -fx-border-insets: 0 0 0 1;
+    -fx-background-radius:10px;
+    -fx-font-family:Andalus;    
+}
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-row-cell:odd{
+    -fx-background-color:transparent;
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+.table-row-cell:selected {
+    -fx-background-color: #3355ff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+    -fx-border: 0 0 0 0;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+/*---------------table----------*/
+#listBox{
+    -fx-background-color:invisible;
+    -fx-border: 0 0 0 0;
+}
+#scoreList{
+    -fx-background-color:invisible;
+    -fx-border: 0 0 0 0;
+}
+.list-view .list-cell:filled{
+    -fx-background-color: rgba(0, 100, 100, 0.5);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-alignment:center;
+}
+.list-view .list-cell:even {
+    -fx-background-color: rgba(0, 100, 100, 0.5);
+    -fx-text-fill: white;
+    -fx-alignment:center;
+}
+.list-view .list-cell:odd {
+    -fx-background-color: rgba(0, 100, 100, 0.5);
+    -fx-text-fill: white;
+    -fx-alignment:center;
+}
+.list-view .list-cell:empty{
+    -fx-background-color: invisible;
+}

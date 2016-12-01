@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="signUpPane" prefHeight="500.0" prefWidth="400.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nsbm.controller.SignUpController">
+   <children>
+      <Label layoutX="110.0" styleClass="mainheader" text="FLOG" textFill="WHITE" />
+      <Label layoutX="95.0" layoutY="94.0" styleClass="subheader" text="Sign Up with Us" textFill="WHITE" />
+      <TextField fx:id="emailField" alignment="CENTER" layoutX="70.0" layoutY="176.0" prefHeight="30.0" prefWidth="260.0" promptText="E-mail Address">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="70.0" layoutY="234.0" prefHeight="30.0" prefWidth="260.0" promptText="User Name ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="71.0" layoutY="296.0" prefHeight="30.0" prefWidth="260.0" promptText="Password">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="signUpButton" layoutX="85.0" layoutY="366.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="20.0" prefWidth="230.0" styleClass="orangeButton" text="Sign Up" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" onAction="#backAction" styleClass="silvarButton" text="Back" />
+      <Button fx:id="exitButton" layoutX="351.0" layoutY="461.0" mnemonicParsing="false" onAction="#exitAction" styleClass="silvarButton" text="Exit" />
+   </children>
+</AnchorPane>
